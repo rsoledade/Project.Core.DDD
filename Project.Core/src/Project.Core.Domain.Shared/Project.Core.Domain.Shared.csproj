@@ -4,8 +4,4 @@
     <TargetFramework>netstandard1.6</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Project.Core.Domain.Shared\Project.Core.Domain.Shared.csproj" />
-  </ItemGroup>
-
 </Project>
