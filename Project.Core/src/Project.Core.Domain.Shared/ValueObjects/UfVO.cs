@@ -1,10 +1,37 @@
-﻿using System.Collections.Generic;
+﻿using Project.Core.Infra.CrossCutting.Extensions;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Project.Core.Domain.Shared.ValueObjects
 {
     public class UfVO
     {
         public string UF { get; set; }
+
+        public bool Validar(string uf)
+        {
+            if (!string.IsNullOrEmpty(uf))
+            {
+                return ValidarUF(uf);
+            }
+
+            return true;
+        }
+
+        private bool ValidarUF(string uf)
+        {
+            if (uf.SomenteNumeros().Length != 0) return false;
+            if (uf.SomenteLetras().Length != 2) return false;
+
+            var listEstados = ObterEstados();
+
+            if (!listEstados.Where(c => c.Codigo == uf).Any())
+            {
+                return false;
+            }
+
+            return true;
+        }
 
         public List<Estado> ObterEstados()
         {
@@ -25,6 +52,7 @@ namespace Project.Core.Domain.Shared.ValueObjects
                 new Estado() { Codigo = "MS" },
                 new Estado() { Codigo = "PA" },
                 new Estado() { Codigo = "PB" },
+                new Estado() { Codigo = "PE" },
                 new Estado() { Codigo = "PI" },
                 new Estado() { Codigo = "PR" },
                 new Estado() { Codigo = "RJ" },
