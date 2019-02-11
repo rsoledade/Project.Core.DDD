@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Project.Core"
   ],
+  "SelectedNode": "\\Project.Core\\src",
   "PreviewInSolutionExplorer": false
 }
