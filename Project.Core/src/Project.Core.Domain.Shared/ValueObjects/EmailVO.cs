@@ -4,7 +4,7 @@
     {
         public string Endereco { get; set; }
 
-        private bool Validar(string email)
+        public bool Validar(string email)
         {
             if (!string.IsNullOrEmpty(email))
             {
