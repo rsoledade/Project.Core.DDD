@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Project.Core"
+    "\\Project.Core",
+    "\\Project.Core\\src",
+    "\\Project.Core\\src\\Project.Core.Domain.Pedidos",
+    "\\Project.Core\\src\\Project.Core.Domain.Pedidos\\Entidades"
   ],
-  "SelectedNode": "\\Project.Core\\src",
+  "SelectedNode": "\\Project.Core\\src\\Project.Core.Domain.Pedidos\\Project.Core.Domain.Pedidos.csproj",
   "PreviewInSolutionExplorer": false
 }

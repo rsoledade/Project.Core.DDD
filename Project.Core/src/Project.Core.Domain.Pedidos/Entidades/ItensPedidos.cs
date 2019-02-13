@@ -3,11 +3,13 @@ using Project.Core.Domain.Shared.Entidades;
 
 namespace Project.Core.Domain.Pedidos.Entidades
 {
-    public class ItensPedido : EntidadeBase
+    public class ItensPedidos : EntidadeBase
     {   
         public int Qtd { get; set; }
         public int IdPedido { get; set; }
+        public virtual Pedidos Pedido { get; set; }
         public int IdProduto { get; set; }
+        public virtual Produtos Produto { get; set; }
 
         public override bool EstaConsistente()
         {

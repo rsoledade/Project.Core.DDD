@@ -11,6 +11,8 @@ namespace Project.Core.Domain.Pedidos.Entidades
         public decimal Valor { get; set; }
         public string Unidade { get; set; }
         public int IdFornecedor { get; set; }
+        public virtual Fornecedores Fornecedor { get; set; }
+        public virtual ICollection<ItensPedidos> ItensPedidos { get; set; }
 
         public override bool EstaConsistente()
         {
