@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Project.Core.Infra.CrossCutting\Project.Core.Infra.CrossCutting.csproj" />
+    <Folder Include="Context\" />
+    <Folder Include="Mappings\" />
   </ItemGroup>
-
+  
 </Project>

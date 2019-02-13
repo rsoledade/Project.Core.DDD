@@ -1,10 +1,12 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Project.Core.Domain.Shared.Entidades;
 
 namespace Project.Core.Domain.Pedidos.Entidades
 {
     public class Fornecedores : Pessoa
-    { 
+    {
+        public ICollection<Produtos> Produtos { get; set; }
         public override bool EstaConsistente()
         {
             ApelidoDeveSerPreenchido();
