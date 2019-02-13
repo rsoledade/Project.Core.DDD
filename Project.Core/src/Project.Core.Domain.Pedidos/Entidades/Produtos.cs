@@ -16,7 +16,10 @@ namespace Project.Core.Domain.Pedidos.Entidades
         {
             ApelidoDeveSerPreenchido();
             ApelidoDeveTerTamanhoLimite();
+            NomeDeveSerPreenchido();
+            NomeDeveTerTamanhoLimite();
             ValorPrecisaSerSuperiorAZero();
+            FornecedorDeveSerPreenchido();
             UniadeDeveSerValida();
 
             return !ListErros.Any();
@@ -32,9 +35,24 @@ namespace Project.Core.Domain.Pedidos.Entidades
             if (Apelido.Length > 20) ListErros.Add("O campo Apelido deve ter no máximo 20 caracteres");
         }
 
+        private void NomeDeveSerPreenchido()
+        {
+            if (string.IsNullOrEmpty(Nome)) ListErros.Add("O campo Nome deve ser preenchido");
+        }
+
+        private void NomeDeveTerTamanhoLimite()
+        {
+            if (Nome.Length > 150) ListErros.Add("O campo Nome deve ter no máximo 150 caracteres");
+        }
+
         private void ValorPrecisaSerSuperiorAZero()
         {
             if (Valor <= 0) ListErros.Add("O campo Valor deverá ser maior que zero");
+        }
+
+        private void FornecedorDeveSerPreenchido()
+        {
+            if (IdFornecedor == 0) ListErros.Add("O campo Fornecedor deve ser informado");
         }
 
         private void UniadeDeveSerValida()
