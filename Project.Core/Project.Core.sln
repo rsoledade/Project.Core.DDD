@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Core.Infra.CrossCut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Core.Infra.Data", "src\Project.Core.Infra.Data\Project.Core.Infra.Data.csproj", "{E232DFD2-45E9-4844-96D0-C7CFE62D7731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Core.Presentation.FrontSite", "src\Project.Core.Presentation.FrontSite\Project.Core.Presentation.FrontSite.csproj", "{FFFC2441-946F-40C6-957C-1448B3E2E89C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Core.Presentation.FrontSite", "src\Project.Core.Presentation.FrontSite\Project.Core.Presentation.FrontSite.csproj", "{FFFC2441-946F-40C6-957C-1448B3E2E89C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
