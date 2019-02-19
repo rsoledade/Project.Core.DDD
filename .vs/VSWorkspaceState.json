@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Project.Core",
-    "\\Project.Core\\src",
-    "\\Project.Core\\src\\Project.Core.Domain.Pedidos",
-    "\\Project.Core\\src\\Project.Core.Domain.Pedidos\\Entidades"
+    "\\Project.Core\\src"
   ],
-  "SelectedNode": "\\Project.Core\\src\\Project.Core.Domain.Pedidos\\Project.Core.Domain.Pedidos.csproj",
+  "SelectedNode": "\\Project.Core\\global.json",
   "PreviewInSolutionExplorer": false
 }

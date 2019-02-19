@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-Project.Core.Presentation.FrontSite-85A9B1AA-78CF-4259-8AD1-77B5009C4B8E</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />    
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Project.Core.Infra.Data\Project.Core.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
