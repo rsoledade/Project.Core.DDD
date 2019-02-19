@@ -19,4 +19,10 @@
     <ProjectReference Include="..\Project.Core.Domain.Shared\Project.Core.Domain.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="appSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

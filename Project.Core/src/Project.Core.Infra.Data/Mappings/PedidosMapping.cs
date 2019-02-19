@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Project.Core.Domain.Pedidos.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Project.Core.Infra.Data.Mappings
 {
@@ -13,7 +10,15 @@ namespace Project.Core.Infra.Data.Mappings
         {
             builder.HasKey(p => p.Id);
 
-            //builder.Property()
+            builder.Property(p => p.DataPedido).HasColumnType("DateTime").IsRequired();
+
+            builder.Property(p => p.DataEntrega).HasColumnType("DateTime");
+
+            builder.HasOne(p => p.Cliente).WithMany(c => c.Pedidos).HasForeignKey(p => p.IdCliente);
+
+            builder.Ignore(p => p.ListErros);
+
+            builder.ToTable("Pedidos");
         }
     }
 }
